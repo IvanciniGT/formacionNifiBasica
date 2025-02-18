@@ -10,7 +10,9 @@ services:
       - 8443:8443/tcp
       - 10000:10000/tcp
       - 8000:8000/tcp
-
     environment:
       NIFI_WEB_HTTP_HOST: '0.0.0.0'
       NIFI_WEB_HTTP_PORT: 8080
+    volumes:
+      - /home/ubuntu/environment/compartida:/compartida
+      
